@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+		<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Fitness and Nutrition&#127823;</title>
+	<script src="nutritie.js"></script>
+	<link href="FACTS.css" rel="stylesheet" type="text/css">
+	<link href="comun.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+		</head>
+		
+		
+		
+	
+	
+<body>
+
+	<header>
+
+	<h1 id="title">Fitness and Nutrition </h1>
+	
+	</header>
+	
+	
+	<nav>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a class="item" href="#surse">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Fitness
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="general_facts_fitness.html">Fitness facts</a>
+      <a href="training.html">Training</a>
+      <a href="Suppliments.html">Supplements</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Nutrition
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="general_fact_nutrition.html">Nutrition facts</a>
+      <a href="healthy_fs.html">Healthy lifestyle</a>
+    </div>
+  </div>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	
+	</nav>
+	
+	
+	<div class="container">
+	
+	<p id="firstp">Your body needs certain nutrients to sustain everyday biological processes. Meeting your daily recommendation of these nutrients and getting 
+	just the right amount is necessary for optimal health. Carbohydrates, protein and fat are macronutrients that provide calories and also have other 
+	metabolic functions. Other components of food, including fiber and specific minerals such as sodium, play similarly important parts in optimal health.<br>
+	</p>
+	<section class="nutrienti">
+	<h2>Carbs</h2>
+	<p><br>
+	Carbohydrates, both sugars and starches, eventually break down into glucose. You need glucose to power cells throughout your body.
+	Since glucose from carbohydrates is the primary energy source throughout your system, most of your calories, or 45 to 65 percent, need 
+	to come from this macronutrient. Carbs have 4 calories per gram. If you usually stick to a strict 1,800-calorie diet each day, you need 
+	202 to 292 grams of carbs. Nearly all foods, except for eggs, meat, poultry and some seafood, have carbohydrates. However, healthy carbohydrate
+	sources, such as fresh produce, legumes, nonfat dairy and beans, pack lots of vitamins and minerals, which may be lacking in processed junk foods.
+	</p>
+	
+	</section>
+	
+	<section class="nutrienti">
+	<h2>Fat</h2>
+	<p>
+	Fat is a structural component of cells and blood vessels. You also need fat to absorb vitamins A, D, E and K, as well as to provide energy when
+	your system runs out of glucose. Between 20 to 35 percent of your total calories should come from fat, which offers 9 calories per gram. Based 
+	on an 1,800-calorie diet, you should get 40 to 70 grams of fat from your daily diet. Selecting lean meats, including skinless chicken breast, 
+	fish and lean cuts of beef, helps keep your fat intake to a minimum so you don't wind up getting too many calories. Replacing full-fat dairy 
+	foods with skim or low-fat varieties, also helps trim some of the excess fat from your diet.
+	</p>
+	</section>
+	
+	<section class="nutrienti">
+	<h2>Fiber</h2>
+	<p>
+	Fiber is a carbohydrate; however, it does not provide calories or convert to glucose. You need fiber for bowel health and regularity.
+	It helps push out waste and allows nutrients to absorb through intestinal walls. Recommendations for adequate fiber intake are 14 grams 
+	for every 1,000 calories. As an example, you need 26 grams for an 1,800-calorie diet. Fiber only comes from plant-based foods, meaning you
+	need to eat more fresh fruits, vegetables, beans and lentils to boost your fiber intake.
+	</p>
+	</section>
+	
+	<section class="nutrienti">
+	<h2>Sodium</h2>
+	<p>
+	Sodium sometimes has a bad reputation, but it is essential for normal heart rhythm. Electrolyte minerals, like sodium, balance fluid in 
+	and around cells, allowing electricity to flow through. Not only does this process make your heart beat, it also allows muscles to contract
+	and relax. Keep your daily sodium intake to less than 1,500 milligrams. If you go over your recommendation, fluid balance becomes altered, 
+	causing your system to hold on to extra water. Your heart has to pump harder to get blood through your body, making your heart weak over time
+	and increasing your risk of cardiovascular disease.
+	</p>
+	</section>
+	
+	<section class="nutrienti">
+	<h2>Protein</h2>
+	<p>
+	Protein is well-known for its role in adding to lean muscle mass, but protein also gives structure to all cells and provides energy when carbs 
+	and fat are not available. Your diet should consist of 10 to 35 percent protein, which provides 4 calories per gram. Based on an 1,800-calorie 
+	diet, this amounts to 45 to 157 grams of protein. Recommendations vary greatly based on activity level. For example, if you are relatively sedentary,
+	you probably need less protein than someone who has a physically strenuous job and works out often.
+	<br><br></p>
+	<form name="form1">
+	<label> Kilograms <input id="i1" type="text" value="0"></label>
+	<label> Activity level
+	<select id="optiuni">
+	<option> Sedentary </option>
+	<option> Moderate Activity </option>
+	<option> Endurance Training</option>
+	<option> Weight Training </option>
+	</select>
+	</label>
+	<label id="rez">Result<input type="text" name="txtres"></label>
+	<input type="button" value="Calculate" onClick="ProteinCalculator()">
+	</form>
+	
+	</section>
+	<br><br>
+	<h2 id="hdoi">Most popular aliments</h2>
+	
+	<table class="tabel">
+	<thead>
+	<tr>
+		<th>Item name</th>
+		<th>Quantity</th>
+		<th>Calories</th>
+		<th>Fat</th>
+		<th>Carbs</th>
+		<th>Protein</th>
+
+
+		
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>Greek Yogurt </td>
+	<td>100g</td>
+	<td>61kcal </td>
+	<td>0.2g </td>
+	<td>10g </td>
+	<td>8.6g </td>
+
+
+	
+	</tr>
+	
+	<tr>
+	<td>White bread </td>
+	<td>1 slice (25g) </td>
+	<td>66.5kcal </td>
+	<td>0.8g </td>
+	<td>12.4g </td>
+	<td>2.2g </td>
+
+
+	</tr>
+	
+	<tr>
+	<td>Oats </td>
+	<td>100g </td>
+	<td>389kcal </td>
+	<td>6.9g </td>
+	<td>66.3g </td>
+	<td>16.9g </td>
+
+	
+	</tr>
+	
+	<tr>
+	<td>Banana </td>
+	<td>100g </td>
+	<td>89kcal</td>
+	<td>0.3g </td>
+	<td>22.8g </td>
+	<td> 1.1g</td>
+
+	</tr>
+	<tr>
+	<td>Chicken Breast  </td>
+	<td>100gr </td>
+	<td>165kcal </td>
+	<td>3.6g</td>
+	<td>0g </td>
+	<td>31g </td>
+	</tr>
+	<tr>
+	<td>Chicken Thigh </td>
+	<td>100g </td>
+	<td>209kcal </td>
+	<td>10.9g </td>
+	<td>0g </td>
+	<td>26g </td>
+	</tr>
+	<tr>
+	<td>Sweet Potatoes </td>
+	<td> 100g</td>
+	<td>86kcal </td>
+	<td>0.1g </td>
+	<td> 20.1g</td>
+	<td> 1.6g</td>
+	</tr>
+	<tr>
+	<td>Beans </td>
+	<td>171g (1 cup) </td>
+	<td>245kcal </td>
+	<td>1g </td>
+	<td>45g </td>
+	<td>15g </td>
+	</tr>
+	<tr>
+	<td> White rice</td>
+	<td>100g </td>
+	<td>123kcal </td>
+	<td> 0.4g</td>
+	<td>30g </td>
+	<td> 2.9g</td>
+	</tr>
+	<tr>
+	<td>Eggs </td>
+	<td>1 piece </td>
+	<td>77kcal </td>
+	<td> 5g</td>
+	<td> 1.1g</td>
+	<td> 6g</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	
+	</tfoot>
+	</table>
+	
+	<div class="QandA">
+	<h2>Review Questions</h2>
+	<p>Q Can I lose weight without exercising?</p>
+	<p>A Yes. If you plan your diet carefully, it is possible to shed body fat 
+without exercising. People gain weight with food alone and there are millions who exercise
+until their blue in the face yet fail to lose weight. Why? Diet; what and how much they eat.	</p>
+	
+	<p>Q What is the purpose of eating smaller meals? </p>
+	<p>A Smaller meals break your carbohydrate intake into smaller, but more 
+frequent portions. Carbs are the double edge sword in weight loss. They provide fuel,
+yet in excess, or when there is too much sugar from carbs in the blood at one time,
+ fat can be stored, and fat breakdown ceases.	</p>
+ 
+	<p>Q Exercise and dieting is the best way to go? </p>
+	<p>A Exercise and dieting at the same time may lead to better progres but 
+many find the combo too overwhelming...commiting to daily exercise and recording
+food consumption at the same time. For many, the best results may come from dieting alone
+or from exercising alone. At least for those who are just getting started. Of course,
+a mild reduction in calories coupled with exercise is a great combo because any type
+of exercise bumps up the metabolic rate making it easier to burn calories.	</p>
+
+	<p>Q Vegetarians don't get enough protein in their diets? </p>
+	<p>A Most people eat far more protein than their bodies require.
+Even most vegetarians get adequate protein. Many foods other than meat provide good sources of protein.	</p>
+
+	<p>Q Tired = Inefficient use of carbs? </p>
+	<p>A When you are sleep deprived, your ability to use your body's 
+favorite fuel, carbs, becomes impaired. Sleep deprivation interfers with the 
+body's ability to metabolize carbs, causing high blood levels of glucose. Excess glucose
+promotes the overproduction of insulin, which may lead to increase in body fat.	</p>
+	</div>
+	
+	</div>
+	
+	
+	</body>
+	</html>
